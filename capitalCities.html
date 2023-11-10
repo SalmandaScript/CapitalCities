@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+	 <title>African's Capital Cities</title>
+	 
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="capitalCities.css" type="text/css"/>
+	 
+	 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    
+    <meta name="mobile-web-app-capable" content="yes"/>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    
+    <meta name="msapplication-starturl" content=""/>
+    
+    <meta name="theme-color" content="teal"/>
+    
+    <link rel="icon" type="image" href="city.png"/>
+	 
+	          <!--javascript-->
+     <script type="text/javascript">
+        function startTime( )
+        {var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        m=checkTime(m);
+        s=checkTime(s);
+        document.getElementById( 'txt').innerHTML=h + ":" +m+":" + s;
+        var t=setTimeout(startTime, 500); 
+}
+        function checkTime( i) { 
+        if (i < 10) {i = "0" + i};
+        return i; 
+} 
+        </script>
+        
+        <script type="text/javascript" src="capitalCities.js"></script>
+	 
+ </head>
+ 
+	<body align="center" id="gradclass">
+	 	
+<body onload="startTime()"><br>
+        <div style="background-color: white" class="salmanda" align="center" id="txt"></div>
+        	
+<div class="salmanda"> <img class="royal" src="city.png"><h2>AFRICA'S CAPITAL CITIES.</h2></div>      	
+	 	
+	 	<div class="salmanda">
+	 	<h1 style="background-color: white" class="salmanda">This Programme will tell you the Capital Cities of African Countries...</h1>
+	 <label>
+      <select class="salmanda" id="city" name="city">
+      	<option value=""> Select a Country here &darr;</option>
+         <option value ="Algiers."> Algeria. </option>
+         
+         <option value="Luanda."> Angola. </option>
+         
+         <option value="Porto-Novo."> Benin. </option>
+         
+         <option value="Gaborone."> Botswana. </option>
+         
+         <option value="Ouagadougou."> Burkina Faso. </option>
+         
+         <option value="Gitega."> Burundi. </option>
+         
+         <option value="Yaoundé."> Cameroon. </option>
+         
+         <option value="Praia."> Cape Verde. </option>
+         
+         <option value="Bangui."> Central African Republic. </option>
+         
+         <option value="N'Djamena."> Chad. </option>
+         
+         <option value="Moroni."> Comoros. </option>
+         
+         <option value="Kinshasa."> D.R.C. </option>
+         
+         <option value="Brazzaville."> Republic of the Congo. </option>
+         
+         <option value="Djibouti."> Djibout. </option>
+         
+         <option value="Cairo."> Egypt. </option>
+         
+         <option value="Malabo."> Equatorial Guinea. </option>
+         
+         <option value="Asmara."> Eriteria. </option>
+         
+         <option value="Mbabane."> Eswatini. </option>
+         
+         <option value="Addis Ababa."> Ethiopia. </option>
+         
+         <option value="Libreville."> Gabon. </option>
+         <option value="Banjul."> The Gambia. </option>
+         <option value="Accra."> Ghana. </option>
+         <option value="Conakry."> Guinea. </option>
+         <option value="Bissau."> Guinea Bissau. </option>
+         <option value="Yamoussoukro."> Ivory Cost. </option>
+         <option value="Nairobi."> Kenya. </option>
+         <option value="Monrovia."> Liberia. </option>
+         <option value="Tripoli."> Libya. </option>
+         <option value="Antananarivo."> Madagarscar. </option>
+         <option value="Lilongwe."> Malawi. </option>
+         <option value="Bamako."> Mali. </option>
+         <option value="Nouakchott."> Mauritania. </option>
+         <option value="Port Lous."> Mauritius. </option>
+         <option value="Rabat."> Morocco. </option>
+         <option value="Maputo."> Mozambique. </option>
+         <option value="Windhoek."> Namibia. </option>
+         
+         <option value="Niamey."> Niger. </option>
+         
+         <option value="Abuja."> Nigeria. </option>
+         
+         <option value="Kigali."> Rwanda. </option>
+         
+         <option value="São Tomé.">Sao Tome & Principle. </option>
+         
+         <option value="Dakar."> Senegal. </option>
+         
+         <option value="Victoria."> Sychelles. </option>
+         
+         <option value="Freetown.">Sierra Leone.</option>
+         <option value="Mogadishu.">Somalia.</option>
+         
+         <option value="Pretoria.">South Africa.</option>
+         
+         <option value="Juba.">South Sudan.</option>
+         
+         <option value="Khartoum.">Sudan.</option>
+         
+         <option value="Dodoma.">Tanzania.</option>
+         
+         <option value="Lomé.">Togo.</option>
+         
+         <option value="Tunis.">Tunisia.</option>
+         
+         <option value="Kampala.">Uganda.</option>
+         
+         <option value="Lusaka.">Zambia.</option>
+         
+         <option value="Harare">Zimbabwe.</option>
+         
+      </select>
+   </label><br>
+   
+   <p><span class="salmanda" id="demo"></span></p>
+</div><br>
+
+<!--<button class="button1">Learn More About Africa's Capital Cities</button>-->
+
+<button onclick="capitalCities();"><a href="file:///storage/emulated/0/WebDevelopment/myPortal/myPortal.html" style="color:yellow">&laquo;Back</a></button>
+
+<hr width="90%" size="5px" color="teal">
+
+<footer>&copy Copyright 2023 Salmanda</footer>
+
+</div><br>
+
+   <script>
+      var select = document.getElementById("city");
+      
+      select.addEventListener("change", function() {
+         var val = document.getElementById("city").value;
+         document.getElementById("demo").innerHTML = val;
+      });
+   </script>
+   
+	 </body>
+ </html>
