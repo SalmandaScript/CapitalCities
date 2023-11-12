@@ -6,6 +6,14 @@
 	 <meta charset="UTF-8"/>
 	 <link rel="stylesheet" href="capitalCities.css" type="text/css"/>
 	 
+	 <meta name="description" content="Capital Cities of Africa"/>
+	 
+    <meta name="keywords" content="Capital, City, Africa,"/>
+    
+    <meta name="Author" content="Salmanda"/>
+    
+    <meta name="revised" content="Capital Cities,10/8/2023"/>
+	 
 	 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
     
     <meta name="mobile-web-app-capable" content="yes"/>
@@ -17,6 +25,13 @@
     <meta name="theme-color" content="teal"/>
     
     <link rel="icon" type="image" href="city.png"/>
+    
+    <style>
+	 .center{
+	 margin: 70px;
+	 width: 85%;
+	 }
+	 </style>
 	 
 	          <!--javascript-->
      <script type="text/javascript">
@@ -40,17 +55,18 @@
 	 
  </head>
  
-	<body align="center" id="gradclass">
+	<body id="gradclass">
 	 	
 <body onload="startTime()"><br>
         <div style="background-color: white" class="salmanda" align="center" id="txt"></div>
         	
-<div class="salmanda"> <img class="royal" src="city.png"><h2>AFRICA'S CAPITAL CITIES.</h2></div>      	
+<div class="salmanda"> <img class="royal" src="city.png"><h2>AFRICA'S ALL CAPITAL CITIES.</h2></div>      	
 	 	
 	 	<div class="salmanda">
-	 	<h1 style="background-color: white" class="salmanda">This Programme will tell you the Capital Cities of African Countries...</h1>
+	 	<h1 style="background-color: white; text-align:center;"
+	 	" class="salmanda">This Programme will tell you the Capital Cities of African Countries...</h1>
 	 <label>
-      <select class="salmanda" id="city" name="city">
+      <select class="salmanda center" id="city" name="city">
       	<option value=""> Select a Country here &darr;</option>
          <option value ="Algiers."> Algeria. </option>
          
@@ -144,18 +160,17 @@
       </select>
    </label><br>
    
-   <p><span class="salmanda" id="demo"></span></p>
+ <p style = "text-align:center;"
+ ><span class="salmanda"
+   id="demo"></span></p>
 </div><br>
 
 <!--<button class="button1">Learn More About Africa's Capital Cities</button>-->
 
-<button onclick="capitalCities();"><a href="file:///storage/emulated/0/WebDevelopment/myPortal/myPortal.html" style="color:yellow">&laquo;Back</a></button>
+<button class="center" onclick="capitalCities();"><a href="file:///storage/emulated/0/WebDevelopment/myPortal/myPortal.html" style="color:yellow">&laquo;Back</a></button></div><br>
 
-<hr width="90%" size="5px" color="teal">
-
-<footer>&copy Copyright 2023 Salmanda</footer>
-
-</div><br>
+<footer style = "text-align:center;"
+ id="footer">&copy Copyright 2023 | All Rights Reserved | Salmanda</footer>
 
    <script>
       var select = document.getElementById("city");
