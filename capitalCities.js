@@ -3,5 +3,5 @@ alert("Thanks for using this App, a'm actually working on Some other interesting
 }
 
 function africaOnline(){
-open("https://salmandascript.github.io/AfricaOnline/");
+open("https://salmandascript.github.io/AfricaOnline/index.html");
 }
